@@ -1,0 +1,680 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Analyse personnelle du règlement intérieur par Cyprien RIVIERE--CACHAU</title><link rel="icon" type="image/png" href="https://cdn.discordapp.com/attachments/1142467903468343418/1142807027396128789/Logo_Lycee_Jean_Perrin.png"><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-interactiveBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="0bc98859-0456-4926-9eec-930e0e99aaab" class="page sans"><header><div class="page-header-icon undefined"><img class="icon" src="https://cdn.discordapp.com/attachments/1142467903468343418/1142807027396128789/Logo_Lycee_Jean_Perrin.png"/></div><h1 class="page-title"><strong>Analyse personnelle du règlement intérieur par Cyprien RIVIERE--CACHAU</strong></h1><p class="page-description"></p></header><div class="page-body"><h2 id="d2fa7245-54f9-47a8-9aa8-aa5103d3faa8" class="">Cette analyse représente une interprétation personnelle du règlement intérieur en vigueur au sein du lycée professionnel Jean Perrin. Il est important de noter que toute interprétation est intrinsèquement teintée de subjectivité. L&#x27;auteur de cette analyse décline toute responsabilité quant aux éventuelles conséquences pouvant découler de cette interprétation.</h2><h3 id="9f5e215b-0faf-40e8-89c4-b3239c9cde78" class="">Fait par : Cyprien RIVIERE--CACHAU en T SN RISC B</h3><h2 id="84343729-eef4-4a3c-88d6-e5315067faa0" class=""><span style="border-bottom:0.05em solid"><strong>Page 5 :</strong></span></h2><p id="6c5c929f-e08e-44cf-a595-c007507f5d5f" class="">L’élève doit être présent … Avoir toujours sur lui son carnet de liaison.<div class="indented"><p id="5b800ba3-c790-4e7a-9f21-f08cace275f6" class=""><strong>Donc si une quelconque personne demande le carnet à l’élève il ne doit pas lui donner pour l’avoir sur lui.</strong></p></div></p><hr id="ed095959-4265-4995-8c16-595402e05a24"/><p id="5a26a4ae-fc34-4e44-990e-2c351ca0693b" class="">L’élève doit dans le respect des autres et des biens … Participer à des activités extra-scolaires, dans le cadre de l’Association Sportive et de la Maison des Lycéens : escalade, tennis, tir à l’arc, plongée, tennis de table, <strong>vidéo</strong><div class="indented"><p id="f04d7092-c7f7-4870-88ff-80c6c8c118cd" class=""><strong>Les élèves sont donc obligés de participer à des activités extra-scolaires.</strong></p></div></p><hr id="170d04f8-cedd-47fd-8f12-24250d7e6094"/><h2 id="92abb57f-fdc1-449d-ae24-923d8a62fc36" class=""><span style="border-bottom:0.05em solid"><strong>Article 1 – Valeurs et principes</strong></span></h2><p id="a0590240-c74f-4749-867f-3d88276789b5" class="">« Conformément aux dispositions de l’article L.141-5-1 du code de l’éducation, le port de signes ou de tenues par lesquels les élèves manifestent ostensiblement une appartenance religieuse est interdite.
+Lorsqu’un élève méconnaît l’interdiction posée à l’alinéa précèdent, le chef d’établissement organise un dialogue avec cet élève avant l’engagement de toute procédure disciplinaire »<div class="indented"><p id="c85ca2d5-4a54-4e08-ba20-527af44a05c6" class=""><strong>Cette partie du règlement intérieur vise spécifiquement les élèves, il faudrait préciser que cela s’applique également à la totalité de la communauté éducative.</strong></p><p id="021d066e-221a-48ef-a3a8-76543a7b0d35" class=""><strong>Dans le cadre d&#x27;un lycée public, le règlement intérieur concerne tous les membres de la communauté éducative, c&#x27;est-à-dire les élèves, les enseignants, le personnel administratif et technique, ainsi que les parents d&#x27;élèves.</strong></p><p id="9582ef59-572c-4363-aa69-a5821c178a57" class=""><a href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006524914/2013-07-24#:~:text=Dans%20chaque%20%C3%A9cole%20et%20%C3%A9tablissement,membres%20de%20la%20communaut%C3%A9%20%C3%A9ducative."><strong>L&#x27;article L401-2 du Code de l&#x27;éducation</strong></a><strong> précise que &quot;dans chaque école et établissement d&#x27;enseignement scolaire public, le règlement intérieur précise les conditions dans lesquelles est assuré le respect des droits et des devoirs de chacun des membres de la communauté éducative.&quot;</strong></p><p id="7ab6254e-e37a-4a83-964e-310effc4c6d0" class=""><strong>De plus, </strong><a href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000039016548#:~:text=Le%20r%C3%A8glement%20int%C3%A9rieur%2C%20adopt%C3%A9%20par%20le%20conseil%20d%27administration%2C%20d%C3%A9finit%20les%20droits%20et%20les%20devoirs%20de%20chacun%20des%20membres%20de%20la%20communaut%C3%A9%20%C3%A9ducative.%20Il%20rappelle%20les%20r%C3%A8gles%20de%20civilit%C3%A9%20et%20de%20comportement."><strong>l&#x27;article R421-5 du Code de l&#x27;éducation</strong></a><strong> précise que &quot;le règlement intérieur, adopté par le conseil d&#x27;administration, définit les droits et les devoirs de chacun des membres de la communauté éducative. Il rappelle les règles de civilité et de comportement.&quot;</strong></p><p id="5d78375c-e9cd-4809-a0f2-08622bc9b711" class=""><strong>Ainsi, le règlement intérieur s&#x27;applique à tous les acteurs de l&#x27;établissement scolaire afin d&#x27;encadrer leur comportement, de garantir le respect des droits et des devoirs de chacun, et de maintenir un climat propice à l&#x27;apprentissage.</strong></p></div></p><hr id="8f14dd6b-d25f-4801-b506-9b9646d716e1"/><h2 id="3fcad55a-f1b1-4071-a0d5-9a693a55e02c" class=""><span style="border-bottom:0.05em solid"><strong>Article 3 – Carnet de correspondance</strong></span></h2><p id="8ad05126-e098-4d5b-9514-c2a857aed96b" class="">L’élève doit toujours avoir sur lui son carnet de correspondance qu’il doit présenter dès l’entrée de l’établissement et à toute demande du chef d’établissement, des professeurs, des surveillants ou d’un autre membre de la communauté éducative.<div class="indented"><p id="89b54ca7-7519-4177-b65c-edcdfd2274d7" class=""><strong>Ceci est illogique, si un membre de la communauté éducative demande le carnet de correspondance, alors l’élève ne l’as plus alors qu’il doit « toujours » avoir sur lui son carnet de correspondance.</strong></p></div></p><hr id="dd82565c-8cce-4e96-a58f-a8c977913782"/><h2 id="894dccd9-5700-4d9a-8afc-3a9663706044" class=""><span style="border-bottom:0.05em solid"><strong>Article 4 - Présence des élèves - Horaires</strong></span></h2><p id="7e47038b-6cff-4400-a673-bcb4973fdf3e" class="">Le portail du lycée est fermé aux horaires de cours. Les retardataires doivent se présenter obligatoirement à la Vie Scolaire.<div class="indented"><p id="df53a384-2eb7-42de-994c-1a76a06a5b85" class=""><strong>Les élèves retardataires doivent se présenter à la Vie Scolaire alors que le portail est fermé, ils doivent donc l’escalader ? Et il faut penser aux élèves qui sont en retard indépendamment de leurs volontés, je pense particulièrement aux élèves de Salazie qui peuvent être en retard dû aux transports scolaires.</strong></p></div></p><hr id="d5d4435e-d466-4d0e-86ed-71d9608f7156"/><h2 id="03f6be60-9de6-4146-802f-fdf14ff5fc6d" class=""><span style="border-bottom:0.05em solid"><strong>Article 6 - Assiduité et ponctualité</strong></span></h2><p id="594fba11-6f67-48f0-968b-117675049034" class="">En cas de retard, l’élève doit obligatoirement se présenter à la Vie scolaire pour obtenir l’autorisation de regagner les cours.<div class="indented"><p id="7b4f265a-5a23-46ba-bad4-d16ff1cd550f" class=""><strong>L’obtention d’un billet de retard à la Vie Scolaire peut être très long étant donnés le nombre d’élève nécessitant un billet de retard, d’absence ou autre.</strong></p></div></p><hr id="bd6a3e0d-9f78-4017-94d5-f230d592377c"/><p id="200e49fa-732c-4d53-a5de-be5d6cdd50ea" class="">Un élève ne peut en aucun cas refuser d’étudier certaines parties du programme de sa classe, ne se dispenser de la participation à certains cours ou aux périodes de formations professionnel, sauf cas de force majeure dûment justifiée ou autorisation exceptionnelle.<div class="indented"><p id="116b8034-a754-4f5b-a660-74fc38db9257" class=""><strong>Dans mon cas, élève Dysgraphique, je suis censé être dispensé d’activité manuelle (dessin, art …) et ces activités sont censé être remplacer par des questions rédactionnelles. En Arts Appliqués et Culture Artistique, suite à une discussion avec le professeur (Mr. Didier Dufour) cela ne serait pas applicable à cette matière, il conviendrait donc, en vertus de mon Projet d’Accompagnement Personnalisé prenant en compte mes difficulté que je sois dispensé de cour d’Arts Appliqués et Culture Artistique dans le cas d’une force majeure dûment justifiée.</strong></p></div></p><hr id="380eadb4-2153-4856-9b75-d6ab86149c33"/><p id="b01c5b23-0a63-4ea0-8a89-0105f2059ed5" class="">Tout élève absent doit obligatoirement passer au bureau de la vie scolaire et faire valider son billet d’absence dans le carnet de correspondance afin d’être autorisé à entrer en classe.<div class="indented"><p id="c7e4a434-abcf-4e95-9895-e3ecf65b3c47" class=""><strong>La validation d’un billet d’absences à la Vie Scolaire peut être très long étant donnés le nombre d’élève nécessitant un billet de retard, d’absence ou autre.</strong></p></div></p><hr id="27652273-9259-45af-a233-cca1a901fabd"/><h2 id="686a2021-9e15-4f2f-a468-bea2bff87a03" class=""><span style="border-bottom:0.05em solid"><strong>Article 8 - Équipements particuliers</strong></span></h2><p id="12675872-2b3a-4e8e-bcfe-860573e62ccc" class="">3. <span style="border-bottom:0.05em solid"> L’ordinateur portable
+</span>L’élève à l’obligation d’avoir son Numérisak, en classe, tous les jours.<div class="indented"><p id="3241b140-01ff-4f6c-8267-619d8b5e6dbf" class=""><strong>Les prises électriques pour les brancher ? Au moins le même nombre que d&#x27;élèves + profs disponibles par salle serait nécessaire.</strong></p></div></p><hr id="5d265cbb-d493-426b-9467-247820553d94"/><h2 id="85295da6-3f3a-437e-9d88-3a91641cf9dc" class=""><span style="border-bottom:0.05em solid"><strong>Article 9 - Discipline</strong></span></h2><p id="b9d17903-0080-4f38-9df9-03fac847195e" class="">Les punitions<div class="indented"><p id="1d8e8321-a520-40e4-82e2-bff5bcd2fbe9" class=""><strong>Il existe plusieurs arguments qui remettent en question l&#x27;efficacité des punitions telles que les heures de retenue et autres méthodes disciplinaires similaires dans les lycées. Voici quelques points à considérer :</strong></p><p id="dd120b4d-3116-49ec-991c-47d112cb81ec" class=""><strong>Il existe plusieurs arguments qui remettent en question l&#x27;efficacité des punitions telles que les heures de retenue et autres méthodes disciplinaires similaires dans les lycées. Voici quelques points à considérer :</strong></p><p id="aae19cb7-3750-4952-9dbd-f9750a1d20c8" class=""><span style="border-bottom:0.05em solid"><strong>Focalisation sur les causes sous-jacentes :</strong></span><strong> Les punitions ne traitent souvent que les symptômes des problèmes comportementaux plutôt que les causes sous-jacentes. Une approche plus holistique visant à comprendre les facteurs qui influencent le comportement d&#x27;un élève peut mener à des solutions plus efficaces et durables.</strong></p><p id="f8cc42d1-ef8f-4cc6-bc45-21a6d4387fa3" class=""><span style="border-bottom:0.05em solid"><strong>Approche punitive vs approche éducative :</strong></span><strong> Les punitions traditionnelles se concentrent souvent sur la rétribution et l&#x27;autorité, plutôt que sur l&#x27;enseignement et le développement des compétences sociales et émotionnelles. Une approche éducative, basée sur la compréhension des comportements et des besoins de l&#x27;élève, peut être plus efficace pour promouvoir des changements positifs.</strong></p><p id="80b2e11b-a816-40ee-a644-698aae822cce" class=""><span style="border-bottom:0.05em solid"><strong>Renforcement négatif :</strong></span><strong> Les punitions peuvent être perçues comme des conséquences négatives pour les comportements indésirables, mais elles ne fournissent pas nécessairement d&#x27;alternative positive. Offrir des solutions constructives et des moyens pour corriger les comportements problématiques peut avoir un impact plus significatif.</strong></p><p id="cf02a2af-d9e3-420a-b206-5bcbe388501b" class=""><span style="border-bottom:0.05em solid"><strong>Effet sur la motivation :</strong></span><strong> Les punitions peuvent avoir des effets négatifs sur la motivation intrinsèque des élèves. Plutôt que de chercher à apprendre pour le plaisir et l&#x27;intérêt, les élèves pourraient se concentrer uniquement sur l&#x27;évitement des conséquences négatives, ce qui peut nuire à leur engagement et à leur curiosité.</strong></p><p id="28355950-65df-4565-81ba-31e38bde8a67" class=""><span style="border-bottom:0.05em solid"><strong>Motivation intrinsèque vs extrinsèque :</strong></span><strong> Les sanctions comme les heures de retenue sont souvent perçues comme des mesures punitives, ce qui peut diminuer la motivation intrinsèque des élèves à participer pleinement aux activités scolaires. Au lieu de cultiver un désir d&#x27;apprentissage et de responsabilité, cela peut conduire à une participation contrainte et peu engagée.</strong></p><p id="a36997c2-e47a-490c-b987-e4cf03a81173" class=""><span style="border-bottom:0.05em solid"><strong>Relations enseignant-élève :</strong></span><strong> L&#x27;utilisation excessive de punitions peut détériorer les relations entre les enseignants et les élèves. Une approche plus empathique et compréhensive peut renforcer les liens, améliorer la communication et encourager les élèves à chercher de l&#x27;aide quand ils en ont besoin.</strong></p><p id="cf48b530-8fdc-45c3-a908-49d83a5f2d25" class=""><span style="border-bottom:0.05em solid"><strong>Risques de stigmatisation :</strong></span><strong> Les élèves qui sont fréquemment punis peuvent être stigmatisés et perçus comme des perturbateurs. Cela peut affecter leur estime de soi et leur intégration sociale.</strong></p><p id="ec457163-a909-4474-a079-43ccc1949374" class=""><span style="border-bottom:0.05em solid"><strong>Approches alternatives :</strong></span><strong> Certains éducateurs soutiennent que des approches alternatives telles que la communication ouverte avec les élèves, la compréhension de leurs besoins individuels et la mise en place de mesures de soutien peuvent être plus efficaces pour résoudre les problèmes de comportement.</strong></p><p id="54ce3523-ff7d-430f-a07f-1e659c871c99" class=""><strong>Il est important de noter que l&#x27;efficacité des punitions peut varier en fonction du contexte, de la manière dont elles sont mises en œuvre et de la sensibilité aux besoins individuels des élèves. De nombreuses écoles cherchent à adopter des approches plus positives, telles que la gestion de classe basée sur la prévention, la communication ouverte et le développement de compétences sociales et émotionnelles.</strong></p></div></p><hr id="f9f5a528-305f-4ffd-aeca-0bc2d00d81af"/><p id="f8d771e1-55d3-41c6-a3b1-b63e243db4fa" class="">Tout élève qui totalisera 3 retards non justifiés sera sanctionné par une retenue de 2 heures.<div class="indented"><p id="8269931a-5e97-415e-b0dd-9e017fa83248" class=""><strong>Il faut prendre en compte, comme dit plus haut les élèves qui ont des retards indépendamment de leurs volontés.</strong></p></div></p><hr id="537c807b-a90b-41ac-8e16-6176544828a6"/><h2 id="7eba5ea5-aab8-45ab-ae67-6f22738382b6" class=""><span style="border-bottom:0.05em solid"><strong>Article 10 - Dégradations - Vols</strong></span></h2><p id="3831b030-fec7-4dec-919e-3f9288a86a0d" class="">Les livres prêtés par l’établissement (manuels scolaires et libres de bibliothèques) devront être rendus avant le départ en vacances.<div class="indented"><p id="d19f3d84-37db-4255-a23c-668c8edaa6b0" class=""><strong>Normalement les élèves ne sont plus censés avoir de manuels scolaires physiques, mais des versions numériques dans le cadre du programme « Numérisak ».</strong></p></div></p><hr id="4fc1c813-5afb-44e2-8bfc-0635d7c6dc6f"/><h2 id="a8cae8b3-a325-4c55-896f-fd7b78e45116" class=""><span style="border-bottom:0.05em solid"><strong>Article 13 - Santé – Hygiène - Sécurité</strong></span></h2><p id="7140711c-e95e-4f24-a90d-8a40de3f900c" class="">4.  Cas sanitaire : en cas de crise sanitaire, les élèves sont invités à respecter le protocole en vigueur et en cas de nécessité à poursuivre leur scolarité en classe virtuelle. Les familles sont invitées à rester connectées au site du lycée pour toute information.<div class="indented"><p id="6904201c-22bb-49b5-af5c-a1c8b4d2d634" class=""><strong>Cette partie du règlement intérieur vise spécifiquement les élèves, il faudrait préciser que cela s’applique également à la totalité de la communauté éducative.</strong></p><p id="447b7c33-ca1d-4c09-897a-6044aa905660" class=""><strong>Dans le cadre d&#x27;un lycée public, le règlement intérieur concerne tous les membres de la communauté éducative, c&#x27;est-à-dire les élèves, les enseignants, le personnel administratif et technique, ainsi que les parents d&#x27;élèves.</strong></p><p id="68f00adb-5256-4935-90d3-b44f4b317fae" class=""><a href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006524914/2013-07-24#:~:text=Dans%20chaque%20%C3%A9cole%20et%20%C3%A9tablissement,membres%20de%20la%20communaut%C3%A9%20%C3%A9ducative."><strong>L&#x27;article L401-2 du Code de l&#x27;éducation</strong></a><strong> précise que &quot;dans chaque école et établissement d&#x27;enseignement scolaire public, le règlement intérieur précise les conditions dans lesquelles est assuré le respect des droits et des devoirs de chacun des membres de la communauté éducative.&quot;</strong></p><p id="7235ab53-8d4c-4aee-9a9d-0d4325acb489" class=""><strong>De plus, </strong><a href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000039016548#:~:text=Le%20r%C3%A8glement%20int%C3%A9rieur%2C%20adopt%C3%A9%20par%20le%20conseil%20d%27administration%2C%20d%C3%A9finit%20les%20droits%20et%20les%20devoirs%20de%20chacun%20des%20membres%20de%20la%20communaut%C3%A9%20%C3%A9ducative.%20Il%20rappelle%20les%20r%C3%A8gles%20de%20civilit%C3%A9%20et%20de%20comportement."><strong>l&#x27;article R421-5 du Code de l&#x27;éducation</strong></a><strong> précise que &quot;le règlement intérieur, adopté par le conseil d&#x27;administration, définit les droits et les devoirs de chacun des membres de la communauté éducative. Il rappelle les règles de civilité et de comportement.&quot;</strong></p><p id="e9df5bfb-f555-41eb-a24d-c2c78512bc32" class=""><strong>Ainsi, le règlement intérieur s&#x27;applique à tous les acteurs de l&#x27;établissement scolaire afin d&#x27;encadrer leur comportement, de garantir le respect des droits et des devoirs de chacun, et de maintenir un climat propice à l&#x27;apprentissage.</strong></p></div></p><hr id="4596a93e-e75c-4da5-8559-253eb840fd81"/><p id="7bb9da56-4d10-402b-800d-a5890f2d3ae3" class="">5.  Tous les élèves se doivent d’adopter une tenue descente et un comportement correct. […] De même, le port de la casquette est interdit à l’intérieur de l’ensemble des bâtiments.<div class="indented"><p id="1d1b81dd-360b-428f-83fd-fe2836872bd1" class=""><strong>Le terme casquette ne reflète pas la totalité des couvre-chefs, il est donc autorisé d’être vêtu de tout autre couvre-chef (chapeau par exemple</strong></p><p id="44d32179-96fc-4f7a-af04-0d37b19864ba" class=""><strong>Cette partie du règlement intérieur vise spécifiquement les élèves, il faudrait préciser que cela s’applique également à la totalité de la communauté éducative.</strong></p><p id="32b57f4b-2c0a-4eba-9b9e-5a72ee0b09ce" class=""><strong>Dans le cadre d&#x27;un lycée public, le règlement intérieur concerne tous les membres de la communauté éducative, c&#x27;est-à-dire les élèves, les enseignants, le personnel administratif et technique, ainsi que les parents d&#x27;élèves.</strong></p><p id="4a541fe8-9d97-4f95-b372-88de637cff99" class=""><a href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006524914/2013-07-24#:~:text=Dans%20chaque%20%C3%A9cole%20et%20%C3%A9tablissement,membres%20de%20la%20communaut%C3%A9%20%C3%A9ducative."><strong>L&#x27;article L401-2 du Code de l&#x27;éducation</strong></a><strong> précise que &quot;dans chaque école et établissement d&#x27;enseignement scolaire public, le règlement intérieur précise les conditions dans lesquelles est assuré le respect des droits et des devoirs de chacun des membres de la communauté éducative.&quot;</strong></p><p id="02fc07e3-ae58-4d9d-a68d-d20e93a21834" class=""><strong>De plus, </strong><a href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000039016548#:~:text=Le%20r%C3%A8glement%20int%C3%A9rieur%2C%20adopt%C3%A9%20par%20le%20conseil%20d%27administration%2C%20d%C3%A9finit%20les%20droits%20et%20les%20devoirs%20de%20chacun%20des%20membres%20de%20la%20communaut%C3%A9%20%C3%A9ducative.%20Il%20rappelle%20les%20r%C3%A8gles%20de%20civilit%C3%A9%20et%20de%20comportement."><strong>l&#x27;article R421-5 du Code de l&#x27;éducation</strong></a><strong> précise que &quot;le règlement intérieur, adopté par le conseil d&#x27;administration, définit les droits et les devoirs de chacun des membres de la communauté éducative. Il rappelle les règles de civilité et de comportement.&quot;</strong></p><p id="756d5302-2639-4863-94d3-bcfa170fac40" class=""><strong>Ainsi, le règlement intérieur s&#x27;applique à tous les acteurs de l&#x27;établissement scolaire afin d&#x27;encadrer leur comportement, de garantir le respect des droits et des devoirs de chacun, et de maintenir un climat propice à l&#x27;apprentissage.</strong></p></div></p><hr id="940bacc5-808e-43ad-a8d6-04ab2f107bb1"/><p id="b2826921-ce26-45b4-b9cf-18e76d83c783" class="">6.  L’utilisation des téléphones portables est interdit pendant les heures de cours. Ils doivent être éteints et rangés dans les cartables – Article L511-4 / LOI n°2018-698 du 3 août 2018 – art.1.<div class="indented"><p id="c4aa0ec5-c087-48d2-89f6-602644ab5a0c" class=""><strong>L’article de loi ici citée (en l’occurrence </strong><a href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037286581"><strong>l’Article L511-5 du Code de l&#x27;éducation</strong></a><strong>), donne l’impression que la loi interdit le téléphone portable dans les lycée, sauf que selon l’article : « Dans les lycées, le règlement intérieur peut interdire l&#x27;utilisation par un élève des appareils mentionnés au premier alinéa dans tout ou partie de l&#x27;enceinte de l&#x27;établissement ainsi que pendant les activités se déroulant à l&#x27;extérieur de celle-ci. »</strong></p></div></p><hr id="e3c1bdef-cdc7-4ddc-b347-ba3da15c6cbd"/><p id="ec6c5345-967a-491f-ad11-b53f0d41acd8" class="">7.  Tout appareil, audio, vidéos, enceinte, montres connectés, etc. pouvant causer des nuisances sont interdites dans l’établissement.<div class="indented"><p id="67f85b43-2931-4ef2-89b8-8b46164f0630" class=""><strong>Mais si ces appareils sont utilisés à des fin pédagogiques par des professeurs, cela reste interdit selon ce présent règlement intérieur.</strong></p></div></p><hr id="624087ee-4aef-4ee0-95de-9cfa33aea507"/><h1 id="0acb4bac-a558-4efe-8200-370c698abbd1" class="">Annexe 1 - Contrat de vie à l’internat</h1><h2 id="fce585df-1207-482a-9afe-4b2578b96ee3" class="">Fonctionnement de l’internat</h2><h3 id="e986e06b-1487-484d-b56d-9f6f03d46cd7" class="">Études</h3><p id="a714b90f-8aa9-44ae-891c-b9eb2ee89f23" class="">L’étude est obligatoire de 17h30 à 18h25 et facultative de 19h00 à 19h30. Les élèves qui souhaitent étudier après l’extinction des feux à 22h00 s’adresseront au personnel de surveillance qui les dirigera vers la salle d’étude. Le délai autorisé n’excédera pas 21h30. Pendant l’étude obligatoire, les élèves disposeront d’un accès wifi. La charte informatique s’applique à cet espace.<div class="indented"><p id="72dfc9b4-d0bb-4284-8536-4d5cdd692f1e" class=""><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>Selon les nouveaux horaires, l’étude obligatoire n’est plus de 17h30 à 18h25 mais de 17h55 à 18h55.</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></p><p id="bd553dd3-efb1-4f9c-bed2-bb1ebe600beb" class=""><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>Concernant l’étude facultative de 19h00 à 19h30, il est là encore indiqué selon les nouveaux horaires que durant cet horaire les internes sont censés être en train de dîner au réfectoire.</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></p><p id="65cb114c-080a-4378-ae95-91a20e29b397" class=""><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>L’étude après l’extinction des feux à 22h00 est possible mais elle ne devra pas dépasser 21h30, cela n’a aucun sens.</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></p><p id="572c1a56-4b19-44d9-be8d-f12fc067bd84" class=""><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>En dehors de l’étude obligatoire les internes n’ont plus accès au wifi pour travailler / se divertir ?</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></p></div></p><hr id="cfedede4-2bfa-4ba6-aea6-ebeb25cd1c0d"/><h3 id="1dbb7cd9-1415-4489-adb1-f0b017c3d4ab" class="">Santé / Sécurité</h3><p id="7b740620-11cf-4c9e-b636-6ee70fc51806" class="">Pour des raisons de sécurité il est interdit de transporter et brancher des appareils électriques (ex : fer à repasser…) dans les chambres, de déplacer les meubles, d’utiliser des serpentins anti-moustiques, de modifier les branchements électriques existants.<div class="indented"><p id="0d7db92c-892e-4489-ad10-d3675fb545df" class=""><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>Le terme “appareils électriques” englobe beaucoup d’appareil, entre autre les téléphones et notamment le Numérisak, les élèves doivent donc obligatoirement ramener le Numérisak mais ne peuvent pas le mettre à charger</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></p></div></p><hr id="bd285090-2420-4365-9f35-4d899c2e6e8a"/><h3 id="8d52937d-2f06-480b-94b6-5722578cd29b" class="">La vie à l’internat</h3><p id="f3b925de-bb3b-4bb2-8569-f0e3933ab8af" class="">17h55-18h55 : Étude<div class="indented"><p id="99746ce5-bcd8-47af-9f7a-62a73b8ef479" class=""><strong>La mise en place d&#x27;une heure d&#x27;étude obligatoire en soirée pour les lycéens, notamment ceux inscrits en filière professionnelle (Bac Pro), soulève des interrogations quant à son efficacité en termes d&#x27;amélioration des résultats scolaires. Bien que cette initiative puisse sembler favorable à première vue, plusieurs facteurs méritent d&#x27;être pris en compte afin de déterminer si elle constitue réellement une stratégie bénéfique.</strong></p><p id="932ef07a-1171-4707-8cc3-557c457fa3f2" class=""><strong>Premièrement, il convient de noter que de nombreux lycéens bénéficient d&#x27;heures de permanence juste avant l&#x27;intervalle de l&#x27;heure d&#x27;étude obligatoire en soirée. Cette séquence intense d&#x27;activités académiques peut, pour certains élèves, entraîner une fatigue mentale et une diminution de leur capacité à absorber de nouvelles informations. Ainsi, l&#x27;obligation d&#x27;assister à une heure d&#x27;étude supplémentaire en fin de journée peut accroître le risque de saturation cognitive, impactant potentiellement leur capacité à assimiler efficacement les contenus.</strong></p><p id="5b815e00-655d-4023-80c5-81c56f493b42" class=""><strong>De plus, l&#x27;imposition de cette heure d&#x27;étude obligatoire peut engendrer une situation où des élèves qui n&#x27;ont pas de devoirs spécifiques à accomplir se retrouvent présents par obligation. Cette présence non nécessaire peut créer un climat d&#x27;ennui et de désintérêt parmi ces élèves, ce qui, en retour, peut perturber le calme et la concentration de celles et ceux qui réellement pourraient bénéficier de ce temps d&#x27;étude supplémentaire. Cette dynamique peut ainsi détourner l&#x27;attention des élèves motivés et entraver leur potentiel d&#x27;apprentissage.</strong></p><p id="54976845-f908-48de-8523-e874a42ae72a" class=""><strong>De surcroît, la qualité de l&#x27;étude en soirée peut être compromise par diverses variables, telles que la fatigue accumulée au cours de la journée, les éventuelles préoccupations personnelles ou familiales, ainsi que la réduction du temps de loisirs et de repos. Ces facteurs peuvent engendrer un environnement moins propice à l&#x27;absorption d&#x27;informations complexes et à la rétention de connaissances.</strong></p><p id="0b8edd10-4e42-4c16-b9f5-11f4280a2237" class=""><strong>En conclusion, bien que l&#x27;intention de renforcer l&#x27;engagement académique des lycéens en Bac Pro par l&#x27;introduction d&#x27;une heure d&#x27;étude obligatoire en soirée soit louable, il est nécessaire de prendre en considération les possibles conséquences indésirables de cette mesure. La fatigue mentale accumulée, le risque d&#x27;ennui pour les élèves sans tâches spécifiques, ainsi que la perturbation potentielle de la concentration et de la qualité d&#x27;étude en soirée, soulèvent des préoccupations quant à l&#x27;efficacité réelle de cette pratique pour l&#x27;amélioration des résultats scolaires. Il conviendrait donc d&#x27;évaluer attentivement ces facteurs avant d&#x27;envisager la mise en œuvre d&#x27;une telle initiative.</strong></p><hr id="67600766-6a85-47ca-854e-a3b24250ee53"/><h1 id="b5122ac2-bc10-4867-bfa0-04ccb52dcbc9" class="">Annexe 6 - Infirmerie</h1></div></p><h3 id="e7dd76dc-46af-4442-ab9e-f289c8189c59" class="">Service :</h3><p id="9cd4a0a5-2b36-4dea-aa71-1f13f5437ead" class="">L’infirmier-e reçoit les élèves :
+[…]
+- A tout moment pour les urgences. L’élève devra être accompagné par le délégué de la classe ou son suppléant, muni de son carnet de liaison renseigné par le professeur. Son retour en classe ne sera possible qu’après visa de l’infirmière ou du CPE.<div class="indented"><p id="7cceb00b-7b4f-47cd-b7c7-b5e406d0f40d" class=""><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>Ce passage ne stipule pas la même chose pas rapport à l’accompagnement des élèves à l’infirmerie pendant les heures de cours. Voici la version présente dans l’article 13 - Santé - Hygiène - Sécurité à la première ligne :</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></p><p id="a662387b-63f1-4974-b35a-5501247c8f19" class=""><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>L’élève désirant se rendre à l’infirmerie le fera obligatoirement durant les récréations et les interclasses, sauf urgence Dans les cas d’urgence, l’élève sera conduit par un autre élève de la classe à l’infirmerie muni de son carnet de liai- son renseigné par le professeur ou un CPE.</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></p><p id="ca09ec51-0756-40a4-9541-19a79dd3deea" class=""><strong><strong>Les deux passages se contredisent donc sur la nécessité de se faire accompagner par le délégué ou le suppléant selon l’annexe 6 - Infirmerie et par n’importe quel élève selon l’article 13 - Santé - Hygiène - Sécurité</strong></strong></p></div></p></div></article></body></html>
